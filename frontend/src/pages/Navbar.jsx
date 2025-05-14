@@ -50,7 +50,7 @@ const NavBar = () => {
           alt="Logo"
           className="rounded-md border border-black border-solid h-[42px] shadow-[0_4px_4px_rgba(0,0,0,0.25)] w-[155px] hover:opacity-80 transition-opacity duration-200 transform translate-x-[-80px]"
         /> */}
-        <h3 className="text-2xl font-bold text-yellow-400">HimCars</h3>
+        <h3 className="text-2xl font-bold text-yellow-400">R&RCars</h3>
       </a>
 
       {/* Navigation Menu */}

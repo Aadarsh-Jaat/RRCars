@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div>
-            <h3 className="text-2xl font-bold text-yellow-400">HimCars</h3>
+            <h3 className="text-2xl font-bold text-yellow-400">R&RCars</h3>
             <p className="mt-4 text-gray-300">
               Making car rentals easy, affordable, and convenient since 2025.
             </p>
@@ -326,7 +326,7 @@ const Footer = () => {
                     />
                   </svg>
                 </div>
-                <span className="text-gray-300">info@HimCars.com</span>
+                <span className="text-gray-300">info@R&RCars.com</span>
               </li>
             </ul>
 
@@ -358,7 +358,7 @@ const Footer = () => {
         <div className="mt-16 pt-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 mb-4 md:mb-0">
-              &copy; 2025 HimCars. All rights reserved.
+              &copy; 2025 R&RCars. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <a
