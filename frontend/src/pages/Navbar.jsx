@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaUserCircle } from "react-icons/fa";
 import AuthModal from "../components/AuthModal.jsx"; // Import the modal component
 import logo from "../assets/images/image.png";
@@ -35,7 +35,6 @@ const NavBar = () => {
 
   // Navigation items
   const navItems = [
-    { label: "Become a renter", id: "become-a-renter" },
     { label: "Rental deals", id: "rental-deals" },
     { label: "Why choose us", id: "why-choose-us" },
     { label: "Testimonials", id: "testimonials" },
@@ -44,26 +43,26 @@ const NavBar = () => {
   return (
     <header className="flex justify-between items-center px-60 py-5 bg-slate-950 max-md:p-10 max-sm:p-5">
       {/* Logo */}
-      <a href="/" aria-label="Go to homepage">
+      <Link to="/" aria-label="Go to homepage">
         {/* <img
           src={logo}
           alt="Logo"
           className="rounded-md border border-black border-solid h-[42px] shadow-[0_4px_4px_rgba(0,0,0,0.25)] w-[155px] hover:opacity-80 transition-opacity duration-200 transform translate-x-[-80px]"
         /> */}
         <h3 className="text-2xl font-bold text-yellow-400">R&RCars</h3>
-      </a>
+      </Link>
 
       {/* Navigation Menu */}
       <nav className="flex gap-10 max-sm:hidden">
         {navItems.map((item) => (
-          <a
+          <Link
             key={item.id}
-            href={`#${item.id}`} // Link to the section ID
+            to={`/${item.id}`} // Link to the section ID
             className="text-base text-white cursor-pointer hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 transition-opacity duration-200"
             aria-label={item.label}
           >
             {item.label}
-          </a>
+          </Link>
         ))}
       </nav>
 

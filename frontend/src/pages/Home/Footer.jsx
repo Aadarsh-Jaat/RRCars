@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -13,7 +14,7 @@ const Footer = () => {
             </p>
             <div className="mt-6 flex space-x-4">
               <a
-                href="#"
+                
                 className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-gray-400 hover:text-yellow-400 hover:bg-slate-700 transition-all duration-300"
               >
                 <span className="sr-only">Facebook</span>
@@ -31,7 +32,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="#"
+                
                 className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-gray-400 hover:text-yellow-400 hover:bg-slate-700 transition-all duration-300"
               >
                 <span className="sr-only">Instagram</span>
@@ -49,7 +50,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="#"
+                
                 className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-gray-400 hover:text-yellow-400 hover:bg-slate-700 transition-all duration-300"
               >
                 <span className="sr-only">Twitter</span>
@@ -71,8 +72,8 @@ const Footer = () => {
             </h3>
             <ul className="mt-4 space-y-3">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/"
                   className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center"
                 >
                   <svg
@@ -88,11 +89,11 @@ const Footer = () => {
                     ></path>
                   </svg>
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/cars"
                   className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center"
                 >
                   <svg
@@ -108,31 +109,12 @@ const Footer = () => {
                     ></path>
                   </svg>
                   Cars
-                </a>
+                </Link>
               </li>
+              
               <li>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center"
-                >
-                  <svg
-                    className="w-4 h-4 mr-2"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                  Locations
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
+                <Link
+                  to="/aboutus"
                   className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center"
                 >
                   <svg
@@ -148,11 +130,11 @@ const Footer = () => {
                     ></path>
                   </svg>
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/contact"
                   className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center"
                 >
                   <svg
@@ -168,7 +150,7 @@ const Footer = () => {
                     ></path>
                   </svg>
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -179,8 +161,8 @@ const Footer = () => {
             </h3>
             <ul className="mt-4 space-y-3">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="faqs"
                   className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center"
                 >
                   <svg
@@ -196,11 +178,11 @@ const Footer = () => {
                     ></path>
                   </svg>
                   FAQs
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="terms"
                   className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center"
                 >
                   <svg
@@ -216,11 +198,11 @@ const Footer = () => {
                     ></path>
                   </svg>
                   Terms & Conditions
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/privacy"
                   className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center"
                 >
                   <svg
@@ -236,11 +218,11 @@ const Footer = () => {
                     ></path>
                   </svg>
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/helpcenter"
                   className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 flex items-center"
                 >
                   <svg
@@ -253,7 +235,7 @@ const Footer = () => {
                     <path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"></path>
                   </svg>
                   Help Center
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -330,7 +312,7 @@ const Footer = () => {
               </li>
             </ul>
 
-            <div className="mt-8">
+            {/* <div className="mt-8">
               <h4 className="text-sm font-semibold text-gray-400 mb-2">
                 NEWSLETTER
               </h4>
@@ -351,7 +333,7 @@ const Footer = () => {
                   </svg>
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -361,24 +343,19 @@ const Footer = () => {
               &copy; 2025 R&RCars. All rights reserved.
             </p>
             <div className="flex space-x-6">
-              <a
-                href="#"
+              <Link
+                to="/privacy"
                 className="text-gray-400 hover:text-yellow-400 transition-colors duration-300"
               >
                 Privacy
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/terms"
                 className="text-gray-400 hover:text-yellow-400 transition-colors duration-300"
               >
                 Terms
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-yellow-400 transition-colors duration-300"
-              >
-                Sitemap
-              </a>
+              </Link>
+             
             </div>
           </div>
         </div>
